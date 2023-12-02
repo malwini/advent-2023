@@ -48,7 +48,6 @@ func compute(filename string) int {
 			}
 		}
 		result += numbersInLine[0]*10 + numbersInLine[len(numbersInLine)-1]
-		fmt.Println(numbersInLine[0]*10 + numbersInLine[len(numbersInLine)-1])
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -58,7 +57,7 @@ func compute(filename string) int {
 }
 
 func main() {
-	result := compute("day1_input.txt")
+	result := compute("day1/day1_input.txt")
 	fmt.Println(result)
 
 }
