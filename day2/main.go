@@ -81,7 +81,7 @@ func compute(filename string, limits map[Color]int) int {
 	file, err := os.Open(filename)
 	check(err)
 	scanner := bufio.NewScanner(file)
-	result := 0
+	var result int
 	for scanner.Scan() {
 		line := scanner.Text()
 		game, rounds := parseLine(line)
